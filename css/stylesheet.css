@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-image: url(../img/p0526_l.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+section {
+  padding-top: 100px;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav.top-fixed {
+  background-color: rgba(34, 49, 52, .9);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0!important;
+}
+ul li {
+  list-style: none;
+  margin: 0 14px;
+}
+ul li a {
+  color: white;
+  display: inline-block;
+  padding: 20px 10px;
+  position: relative;
+  text-decoration: none !important;
+}
+ul li a:after {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+}
+ul li a:hover {
+  color: gray;
+}
+ul li a:hover:after {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.section-title-wrapper {
+  text-align: center;
+}
+
+.text-space {
+  background-color: white;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.card-wrapper {
+  width: 33%;
+  margin: 10px 0;
+  float: left;
+}
+.card {
+  border: 0;
+  width: auto;
+  margin: 0 10px;
+  height: 500px;
+  border-radius: 4px;
+}
+.certificate .card {
+  height: 350px;
+}
+.card .card-img {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto 0 auto;
+  position: relative;
+}
+.card-img-top {
+  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.card .card-title {
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+@media all and (max-width: 1000px) {
+  .card-wrapper {
+    width: 50%;
+}
+
+@media all and (max-width: 670px) {
+  .card-wrapper {
+    width: 100%;
+  }
+}
